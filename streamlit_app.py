@@ -8,17 +8,17 @@ import streamlit as st
 # Welcome to Mr. Peach!
 
 # Sample Input
-# 'area_home' : 140, #average area of livable space in germany
-# 'age_home' : 1960,
-# 'number_people' : 3,
-# 'age_windows' : 1980,
-# 'number_panes' : 1,
-# 'age_heating' : 1990,
-# 'old_type_heating' : 0, #oil heating
-# 'number_floor' : 2
+        'area_home' : 140, #average area of livable space in germany
+        'age_home' : 1960,
+        'number_people' : 3,
+        'age_windows' : 1980,
+        'number_panes' : 1,
+        'age_heating' : 1990,
+        'old_type_heating' : 0, #oil heating
+        'number_floor' : 2
 
 # Sample output
-        # {'window': {'funding': 20, 'renovate': 1, 'cost': 12000, 'savings': 440}, 'heating': {'funding': '50', 'renovate': 1, 'cost': '15000', 'savings': '0'}}
+        {'window': {'funding': 20, 'renovate': 1, 'cost': 12000, 'savings': 440}, 'heating': {'funding': '50', 'renovate': 1, 'cost': '15000', 'savings': '0'}}
 """
 
 import requests
