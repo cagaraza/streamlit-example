@@ -53,4 +53,5 @@ with st.form(key='my_form'):
         response = requests.post(url, params)
 
         for i in response.json().keys():
+            st.write(i)
             st.write(response.json()[i])
