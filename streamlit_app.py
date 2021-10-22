@@ -25,14 +25,14 @@ import requests
 
 with st.form(key='my_form'):
 
-    area_home = st.text_input("area_home")
-    age_home = st.text_input("age_home")
-    number_people = st.text_input("number_people")
-    age_windows = st.text_input("age_windows")
-    number_panes = st.text_input("number_panes")
-    age_heating = st.text_input("age_heating")
-    old_type_heating = st.text_input("old_type_heating")
-    number_floor = st.text_input("number_floor")
+    area_home = st.text_input("How many sqms does your house have?")
+    age_home = st.text_input("What year was your house built/last fully renovated? (Year)")
+    number_people = st.text_input("How many people live in your house?")
+    age_windows = st.text_input("When were the windows installed (Enter year)")
+    number_panes = st.text_input("How many panes does your windows have?")
+    age_heating = st.text_input("When was the heating system installed?")
+    old_type_heating = st.text_input("How is your house heated? (0 - oil, 1 - others)")
+    number_floor = st.text_input("How many stories does your house have?")
 
 
     url = 'https://mrpeach-dot-interhyp-dps.ew.r.appspot.com'
