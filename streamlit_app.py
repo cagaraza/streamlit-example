@@ -19,14 +19,12 @@ import requests
 
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 
     area_home = st.text_input("area_home", area_home)
     age_home = st.text_input("age_home", age_home)
     number_people = st.text_input("number_people", number_people)
     age_windows = st.text_input("age_windows", age_windows)
-    number_panes = st.text_input("number_panes", numbe_panes])
+    number_panes = st.text_input("number_panes", number_panes)
     old_type_heating = st.text_input("old_type_heating", old_type_heating)
     number_floor = st.text_input("number_floor", number_floor)
         # 'area_home' : 140, #average area of livable space in germany
@@ -52,8 +50,6 @@ with st.echo(code_location='below'):
             'number_floor' : 2
             }
     response = requests.post(url, params)
-    print(params)
-    print(response.json())
 
 
     # Point = namedtuple('Point', 'x y')
