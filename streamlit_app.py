@@ -38,14 +38,14 @@ with st.form(key='my_form'):
 
     url = 'https://mrpeach-dot-interhyp-dps.ew.r.appspot.com'
 
-    params = {'area_home' : int(area_home), #average area of livable space in germany
-            'age_home' : int(age_home),
-            'number_people' : int(number_people),
-            'age_windows' : int(age_windows),
-            'number_panes' : int(number_panes),
-            'age_heating' : int(age_heating),
-            'old_type_heating' : int(old_type_heating), #oil heating
-            'number_floor' : int(number_floor)
+    params = {'area_home' : area_home, 
+            'age_home' : age_home,
+            'number_people' : number_people,
+            'age_windows' : age_windows,
+            'number_panes' : number_panes,
+            'age_heating' : age_heating,
+            'old_type_heating' : old_type_heating, #oil heating
+            'number_floor' : number_floor
             }
 
     if submit_button: 
