@@ -37,18 +37,17 @@ with st.form(key='my_form'):
 
     url = 'https://mrpeach-dot-interhyp-dps.ew.r.appspot.com'
 
-    params = {'area_home' : 140, #average area of livable space in germany
-            'age_home' : 1960,
-            'number_people' : 3,
-            'age_windows' : 1980,
-            'number_panes' : 1,
-            'age_heating' : 1990,
-            'old_type_heating' : 0, #oil heating
-            'number_floor' : 2
+    params = {'area_home' : area_home, #average area of livable space in germany
+            'age_home' : age_home,
+            'number_people' : number_people,
+            'age_windows' : age_windows,
+            'number_panes' : number_panes,
+            'age_heating' : age_heating,
+            'old_type_heating' : old_type_heating, #oil heating
+            'number_floor' : number_floor
             }
 
     submit_button = st.form_submit_button(label='Submit parameters')
 
-    if submit:
+    if submit_button: 
         response = requests.post(url, params)
-
