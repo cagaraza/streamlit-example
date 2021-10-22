@@ -46,7 +46,6 @@ with st.form(key='my_form'):
             'old_type_heating' : int(old_type_heating), #oil heating
             'number_floor' : int(number_floor)
             }
-
     submit_button = st.form_submit_button(label='Submit!')
 
     if submit_button: 
