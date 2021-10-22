@@ -53,7 +53,7 @@ with st.form(key='my_form'):
         response = requests.post(url, params)
 
         for i in response.json().keys():
-        print('')
-        print(i)
-        print(response.json()[i])
-        print('')
+            print('')
+            print(i)
+            print(response.json()[i])
+            print('')
