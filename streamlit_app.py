@@ -46,5 +46,8 @@ with st.echo(code_location='below'):
             'old_type_heating' : 0, #oil heating
             'number_floor' : 2
             }
-    response = requests.post(url, params)
+
+    submit_button = st.form_submit_button(label='Submit parameters')
+    if submit:
+        response = requests.post(url, params)
 
