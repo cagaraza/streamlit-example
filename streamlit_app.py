@@ -30,6 +30,7 @@ with st.form(key='my_form'):
     number_people = st.text_input("number_people")
     age_windows = st.text_input("age_windows")
     number_panes = st.text_input("number_panes")
+    age_heating = st.text_input("age_heating")
     old_type_heating = st.text_input("old_type_heating")
     number_floor = st.text_input("number_floor")
 
@@ -47,6 +48,7 @@ with st.form(key='my_form'):
             }
 
     submit_button = st.form_submit_button(label='Submit parameters')
+
     if submit:
         response = requests.post(url, params)
 
