@@ -52,5 +52,8 @@ with st.form(key='my_form'):
     if submit_button: 
         response = requests.post(url, params)
 
-        for i in response.keys():
-            print response[i]
+        for i in response.json().keys():
+        print('')
+        print(i)
+        print(response.json()[i])
+        print('')
