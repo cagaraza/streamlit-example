@@ -23,8 +23,7 @@ import streamlit as st
 
 import requests
 
-
-with st.echo(code_location='below'):
+with st.form(key='my_form'):
 
     area_home = st.text_input("area_home")
     age_home = st.text_input("age_home")
