@@ -5,9 +5,9 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Mr. Peach!
+# Renovation 2500
 
-# Sample Input
+    # Sample Input
         'area_home' : 140, #average area of livable space in germany
         'age_home' : 1960,
         'number_people' : 3,
@@ -17,7 +17,7 @@ import streamlit as st
         'old_type_heating' : 0, #oil heating
         'number_floor' : 2
 
-# Sample output
+    # Sample output
         {'window': {'funding': 20, 'renovate': 1, 'cost': 12000, 'savings': 440}, 'heating': {'funding': '50', 'renovate': 1, 'cost': '15000', 'savings': '0'}}
 """
 
@@ -46,6 +46,7 @@ with st.form(key='my_form'):
             'old_type_heating' : int(old_type_heating), #oil heating
             'number_floor' : int(number_floor)
             }
+
     submit_button = st.form_submit_button(label='Submit!')
 
     if submit_button: 
