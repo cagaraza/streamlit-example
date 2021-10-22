@@ -47,7 +47,7 @@ with st.form(key='my_form'):
             'number_floor' : int(number_floor)
             }
 
-    submit_button = st.form_submit_button(label='Submit parameters')
+    submit_button = st.form_submit_button(label='Submit!')
 
     if submit_button: 
         response = requests.post(url, params)
