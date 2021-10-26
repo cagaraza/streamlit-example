@@ -31,7 +31,7 @@ with st.form(key='my_form'):
     age_windows = st.text_input("When were the windows installed (Enter year)")
     number_panes = st.text_input("How many panes does your windows have?")
     age_heating = st.text_input("When was the heating system installed?")
-    old_type_heating = st.text_input("How is your house heated? (0 - oil, 1 - others)")
+    old_type_heating = st.text_input("How is your house heated? (0 - oil, 1 - gas, 2 = pellet, 3 = brennwertkessel)")
     number_floor = st.text_input("How many stories does your house have?")
 
     submit_button = st.form_submit_button(label='Submit parameters')
