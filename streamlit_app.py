@@ -50,5 +50,5 @@ with st.form(key='my_form'):
 
     if submit_button: 
         response = requests.post(url, params)
-
+        print('ok')
         print(response)
