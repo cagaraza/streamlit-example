@@ -36,7 +36,7 @@ with st.form(key='my_form'):
 
     submit_button = st.form_submit_button(label='Submit parameters')
 
-    url = 'https://mrpeach-dot-interhyp-dps.ew.r.appspot.com'
+    url = '34.76.252.213:80'
 
     params = {'area_home' : area_home, 
             'age_home' : age_home,
@@ -51,6 +51,4 @@ with st.form(key='my_form'):
     if submit_button: 
         response = requests.post(url, params)
 
-        for i in response.json().keys():
-            st.write(i)
-            st.write(response.json()[i])
+        print(response)
