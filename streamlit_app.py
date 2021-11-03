@@ -36,7 +36,7 @@ with st.form(key='my_form'):
 
     submit_button = st.form_submit_button(label='Submit parameters')
 
-    url = '34.76.252.213:80'
+    url = '34.76.252.213:80/assess'
 
     params = {'area_home' : area_home, 
             'age_home' : age_home,
