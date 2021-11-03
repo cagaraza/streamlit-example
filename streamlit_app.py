@@ -47,7 +47,7 @@ with st.form(key='my_form'):
             'heatingType' : old_type_heating, #oil heating
             'stories' : number_floor
             }
-
+    st.write(params)
 
     if submit_button: 
         response = requests.post(url, params)
