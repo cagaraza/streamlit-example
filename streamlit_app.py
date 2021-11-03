@@ -38,15 +38,16 @@ with st.form(key='my_form'):
 
     url = 'http://34.76.252.213:80/assess'
 
-    params = {'area_home' : area_home, 
-            'age_home' : age_home,
-            'number_people' : number_people,
-            'age_windows' : age_windows,
-            'number_panes' : number_panes,
-            'age_heating' : age_heating,
-            'old_type_heating' : old_type_heating, #oil heating
-            'number_floor' : number_floor
+    params = {'sqmeters' : area_home, 
+            'renovationYear' : age_home,
+            'numResidents' : number_people,
+            'windowYear' : age_windows,
+            'windowLayer' : number_panes,
+            'heatingYear' : age_heating,
+            'heatingType' : old_type_heating, #oil heating
+            'stories' : number_floor
             }
+
 
     if submit_button: 
         response = requests.post(url, params)
